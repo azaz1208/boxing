@@ -77,41 +77,44 @@
             let m = document.getElementById("mail").value;
             let o = document.getElementById("object").value;
             let c = document.getElementById("comment").value;
-            let az="";
-            
+            let az = "";
+
             if (n == "") {
-                az+="請輸入您的姓名！\n";
+                az += "請輸入您的姓名！\n";
             }
             if (b == "") {
-                az+="請輸入您的生日！\n";
+                az += "請輸入您的生日！\n";
             }
             if (m == "") {
-                az+="請輸入您的E-mail！\n";
+                az += "請輸入您的E-mail！\n";
             } else if (m.indexOf('@') == (-1)) {
-                az+="請輸入正確的E-mail!!!!\n";
+                az += "請輸入正確的E-mail!!!!\n";
             }
             if (o == "") {
-                az+="請輸入主旨！\n";
+                az += "請輸入主旨！\n";
             }
             if (c == "") {
-                az+="請輸入您想留言的內容！";
+                az += "請輸入您想留言的內容！";
             }
-            alert(az);
+            if (az != "") {
+                alert(az);
+            }
         }
-    
-    
-        function reset(){
+
+
+
+        function reset() {
             let n = document.getElementById("name");
             let b = document.getElementById("birthday");
             let m = document.getElementById("mail");
             let o = document.getElementById("object");
             let c = document.getElementById("comment");
 
-            n.value="";
-            b.value="";
-            m.value="";
-            o.value="";
-            c.value="";
+            n.value = "";
+            b.value = "";
+            m.value = "";
+            o.value = "";
+            c.value = "";
         }
     </script>
 </body>

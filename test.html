@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* 子層 */
+        .col {
+            background-color: lightslategrey;
+            /* col的寬度 (父元素x25%) */
+            width: 26%;
+            height: fit-content;
+            margin: 2%;
+            padding: 1%;
+            position: relative;
+        }
+
+        .col_img {
+            width: 100%;
+            opacity: 1;
+        }
+
+        .col h1 {
+            width: 100%;
+        }
+
+        .col_img img {
+            width: 100%;
+            height: 300px;
+            z-index: 10;
+        }
+
+        .col>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* 滑鼠接觸照片 */
+        .overlay {
+            background-color: red;
+            width: 93%;
+            height: 310px;
+
+            position: absolute;
+            /* top: -200%; */
+            top: 2%;
+            /* z-index: 10; */
+            opacity: 1;
+        }
+
+        .overlay img {
+            width: 15%;
+            height: 15%;
+        }
+
+        .col_img:hover {
+            opacity: 0.5;
+        }
+        
+    </style>
+
 </head>
+
 <body>
-    <div style="display: flex;">
-        <div style="background-color: green; height: 100px; width: 30%;">
-            1
+    <div class="col">
+        <!-- fake img -->
+        <div class="col_img">
+            <img src="./kuma-interview-hw-images/photo2_0008_list01.png">
         </div>
-        <div style="margin-left: 10%; background-color: red; height: 100px; width: 30%;">
-            2
+
+        <!-- 照片覆蓋的透明背景 -->
+        <div class="overlay">
+            <div>
+                <h3> 021 </h3>
+                <h4>扁平化 極簡 白 童趣 紅 綠</h4>
+            </div>
+            <div>
+                <img src="./kuma-interview-hw-images/link.png" alt="">
+                <img src="./kuma-interview-hw-images/loupe.png" alt="">
+            </div>
         </div>
-        <div style="background-color: blue; height: 100px; width: 30%;">
-            3
-            <img style="height: 30px;width: 30px;"src="./kuma-interview-hw-images/left_arrow.png" alt="">
-        </div>
+
+        <h1>021</h1>
+        <!-- lorem30 fake letter -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            error omnis magni suscipit provident quisquam totam sit,
+            in culpa maxime, sequi aliquid repellat neque accusantium assumenda nulla minus.
+            Dignissimos, totam?
+        </p>
+
     </div>
 </body>
+
 </html>
