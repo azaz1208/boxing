@@ -3,20 +3,22 @@
     padding: 0;
 
 }
+
 /* bgside 的背景色 nav區塊*/
-.bgside{
+.bgside {
     background-color: rgb(140, 177, 209);
     height: 837px;
     width: 20%;
     position: relative;
 }
+
 /* Nav 導覽列 */
 .menu {
-   /* background-color: brown; */
+    /* background-color: brown; */
     font-size: 20px;
     position: absolute;
-   margin-top: 110%;
-  
+    margin-top: 110%;
+
 }
 
 .menu li {
@@ -27,7 +29,7 @@
 
 .menu a {
     display: block;
-    padding: 20px ;
+    padding: 20px;
     color: gray;
     text-align: center;
     text-decoration: none;
@@ -35,11 +37,11 @@
 }
 
 .menu a:hover {
-   color: blueviolet;
+    color: blueviolet;
 }
 
 /* logo part*/
-#logo{
+#logo {
     position: absolute;
     margin-left: 10%;
 }
@@ -54,7 +56,7 @@
     overflow: hidden;
     margin-left: 10%;
 }
- 
+
 /* 置中 */
 .middle {
     position: absolute;
@@ -95,22 +97,103 @@ input[name="r"] {
     width: 500%;
     height: 100%;
     display: flex;
-    
+
 }
+
 /* 裝圖片div */
 .slide {
     width: 20%;
     transition: 0.6s;
+
 }
 
 .slide img {
     width: 100%;
     height: 100%;
-   
+    position: relative;
+
 }
-#r1:checked ~ .s1{
+
+#r1:checked~.s1 {
     margin-left: 0;
 }
-#r2:checked ~ .s1{
+
+#r2:checked~.s1 {
     margin-left: -20%;
+}
+
+/* 文字上圖區塊 */
+.div1 {
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    /* justify-content: center; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4e76c0;
+}
+
+.div1 h1 {
+    text-align: center;
+    text-shadow: 2px 2px 3px #999;
+}
+
+.div1 h2 {
+    text-align: center;
+    text-shadow: 2px 2px 3px #999;
+}
+
+/* 箭頭的區塊 */
+
+.left_arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1%;
+    top: 50%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.right_arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 1%;
+    top: 50%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+
+.r_arrow_div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 1%;
+    top: 50%;
+    z-index: 1;
+    /* visibility: hidden;  */
+    /* background-color: #4e76c0; */
+}
+
+.r_arrow_div:hover + .right_arrow {
+    visibility: visible;
+    z-index: 2;
+}
+
+.l_arrow_div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1%;
+    top: 50%;
+    z-index: 2;
+    /* visibility: hidden;  */
+    /* background-color: #4e76c0; */
+}
+.l_arrow_div:hover + .left_arrow {
+    visibility: visible;
+    z-index: 2;
 }
