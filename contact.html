@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="con"> 
+        <div class="bgside">
+            <!-- Nav 導覽列 -->
+            <div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./boxing.html">首頁</a></li>
+                        <li><a href="./product.html">風格</a></li>
+                        <li><a href="chrome://welcome/">色系</a></li>
+                        <li><a href="./contact.html">聯絡我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img id="logo" src="./kuma-interview-hw-images/logo.png">
+            </div>
+        </div>
+        <div class="contactDiv">
+            <h1 class="caption">聯絡我們</h1>
+            <br><br><br>
+            <table class="table" border="1">
+                <h2 class="motto">專業是我們的基礎，質感是我們的堅持，聆聽您的需求是我們的榮幸。</h2>
+                <tr>
+                    <th>姓名<sup style="color: brown;">*</sup></th>
+                    <td><input type="text" name="name" placeholder="王大明" required></td>
+                </tr>
+                <tr>
+                    <th>性別</th>
+                    <td>
+                        <input type="radio" name="sex" value="男生" checked>男生
+                        <input type="radio" name="sex" value="女生">女生
+                    </td>
+                </tr>
+                <tr>
+                    <th>出生年月日</th>
+                    <td><input type="date"name="birthday"required></td>
+                </tr>
+                <tr>
+                    <th>E-mail<sup style="color: brown;">*</sup></th>
+                    <td><input type="email" name="mail" placeholder="sample@gmail.com"required></td>
+                </tr>
+                <tr>
+                    <th>主旨<sup style="color: brown;">*</sup></th>
+                    <td><input type="text" name="object" required></td>
+                </tr>
+                <tr>
+                    <th>留言<sup style="color: brown;">*</sup></th>
+                    <td><textarea name="comment" cols="40" rows="4" required></textarea></td>
+                </tr>
+                
+            </table>
+            <div id="tablebtns">
+                <input type="reset" value="清除重填">
+                <input type="submit" value="送出">
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
