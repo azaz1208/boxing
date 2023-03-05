@@ -10,19 +10,21 @@
     height: 837px;
     width: 20%;
     position: relative;
+    
 }
 
 /* Nav 導覽列 */
 .menu {
     /* background-color: brown; */
     font-size: 20px;
-    position: absolute;
-    margin-top: 110%;
+    position: fixed;
+    top: 35%;
+    width: 20%;
 
 }
 
 .menu li {
-    width: 250px;
+    width: 100%;
     list-style: none;
 
 }
@@ -42,8 +44,9 @@
 
 /* logo part*/
 #logo {
-    position: absolute;
-    margin-left: 10%;
+    position: fixed;
+    margin-left: 2%;
+    width: 15%;
 }
 
 

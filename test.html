@@ -8,91 +8,76 @@
     <title>Document</title>
 
     <style>
-        /* 子層 */
-        .col {
-            background-color: lightslategrey;
-            /* col的寬度 (父元素x25%) */
-            width: 26%;
-            height: fit-content;
-            margin: 2%;
-            padding: 1%;
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* bgside 的背景色 nav區塊*/
+        .bgside {
+            background-color: rgb(140, 177, 209);
+            height: 837px;
+            width: 20%;
             position: relative;
+            
         }
 
-        .col_img {
+        /* Nav 導覽列 */
+        .menu {
+            /* background-color: brown; */
+            font-size: 20px;
+            position: fixed;
+            top: 35%;
+            width: 20%;
+
+        }
+
+        .menu li {
             width: 100%;
-            opacity: 1;
+            list-style: none;
+
         }
 
-        .col h1 {
-            width: 100%;
+        .menu a {
+            display: block;
+            padding: 20px;
+            color: gray;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
         }
 
-        .col_img img {
-            width: 100%;
-            height: 300px;
-            z-index: 10;
+        .menu a:hover {
+            color: blueviolet;
         }
 
-        .col>img {
-            width: 100%;
-            height: 300px;
-        }
-
-        /* 滑鼠接觸照片 */
-        .overlay {
-            background-color: red;
-            width: 93%;
-            height: 310px;
-
-            position: absolute;
-            /* top: -200%; */
-            top: 2%;
-            /* z-index: 10; */
-            opacity: 1;
-        }
-
-        .overlay img {
+        /* logo part*/
+        #logo {
+            position: fixed;
+            margin-left: 2%;
             width: 15%;
-            height: 15%;
         }
-
-        .col_img:hover {
-            opacity: 0.5;
-        }
-        
     </style>
 
 </head>
 
 <body>
-    <div class="col">
-        <!-- fake img -->
-        <div class="col_img">
-            <img src="./kuma-interview-hw-images/photo2_0008_list01.png">
-        </div>
-
-        <!-- 照片覆蓋的透明背景 -->
-        <div class="overlay">
-            <div>
-                <h3> 021 </h3>
-                <h4>扁平化 極簡 白 童趣 紅 綠</h4>
-            </div>
-            <div>
-                <img src="./kuma-interview-hw-images/link.png" alt="">
-                <img src="./kuma-interview-hw-images/loupe.png" alt="">
-            </div>
-        </div>
-
-        <h1>021</h1>
-        <!-- lorem30 fake letter -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            error omnis magni suscipit provident quisquam totam sit,
-            in culpa maxime, sequi aliquid repellat neque accusantium assumenda nulla minus.
-            Dignissimos, totam?
-        </p>
-
+    <div class="bgside">
+        <img id="logo" src="./kuma-interview-hw-images/logo.png">
     </div>
+    <!-- Nav 導覽列 -->
+    <div>
+        <nav class="menu">
+            <ul>
+                <li><a href="./boxing.html">首頁</a></li>
+                <li><a href="./product.html">風格</a></li>
+                <li><a href="./boxing.html">色系</a></li>
+                <li><a href="./contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </div>
+
 </body>
 
 </html>
