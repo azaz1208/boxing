@@ -55,7 +55,7 @@
 /* 整個輪播區塊 */
 .slideshow {
     width: 80%;
-    height: 915px;
+    height: 920px;
     overflow: hidden;
     margin-left: 10%;
 }
@@ -68,7 +68,7 @@
     transform: translate(-50%, -50%);
 }
 
-/* 裝輪播按鈕區塊  */
+/* 裝輪播按鈕區塊 */
 .navigation {
     position: absolute;
     bottom: 20px;
@@ -147,7 +147,7 @@ input[name="r"] {
     text-shadow: 2px 2px 3px #999;
 }
 
-/* 箭頭的區塊 */
+/* 換頁箭頭的區塊 */
 
 .left_arrow {
     position: absolute;
@@ -155,8 +155,7 @@ input[name="r"] {
     height: 60px;
     left: 1%;
     top: 50%;
-    z-index: 1;
-    visibility: hidden;
+    opacity: 0;
 }
 
 .right_arrow {
@@ -165,38 +164,35 @@ input[name="r"] {
     height: 60px;
     right: 1%;
     top: 50%;
-    z-index: 1;
-    visibility: hidden;
-}
-
-
-.r_arrow_div {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    right: 1%;
-    top: 50%;
-    z-index: 1;
-    /* visibility: hidden;  */
-    /* background-color: #4e76c0; */
-}
-
-.r_arrow_div:hover + .right_arrow {
-    visibility: visible;
-    z-index: 2;
+    opacity: 0;
 }
 
 .l_arrow_div{
     position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 1%;
-    top: 50%;
-    z-index: 2;
-    /* visibility: hidden;  */
+    width: 70px;
+    height: 920px;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
     /* background-color: #4e76c0; */
 }
+/* 前面那個class hover ＋ <= 加之後 後面的class 會怎樣 （只能是HTML那個class後面一個class或是元素）  */
 .l_arrow_div:hover + .left_arrow {
-    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.r_arrow_div {
+    position: absolute;
+    width: 70px;
+    height: 920px;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+    /* background-color: #4e76c0; */
+}
+
+.r_arrow_div:hover + .right_arrow {
+    opacity: 1;
     z-index: 2;
 }

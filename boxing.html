@@ -40,10 +40,12 @@
                     </div>
                     <img src="./kuma-interview-hw-images/01.png" alt="">
                 </div>
+
+                <!-- 滑動換頁箭頭 -->
                 <div class="l_arrow_div"></div>
-                <img class="left_arrow" onclick="slide()" src="./kuma-interview-hw-images/left_arrow.png" alt="">
+                <img class="left_arrow" onclick="l_slide()" src="./kuma-interview-hw-images/left_arrow.png" alt="">
                 <div class="r_arrow_div"></div>
-                <img class="right_arrow" src="./kuma-interview-hw-images/right_arrow.png" alt="">
+                <img class="right_arrow" onclick="r_slide()" src="./kuma-interview-hw-images/right_arrow.png" alt="">
 
 
                 <div class="slide">
@@ -62,12 +64,15 @@
         </div>
     </div>
 
-
     <script>
-        function slide() {
+        function r_slide() {
             document.getElementById("r2").checked = true;
         }
+        function l_slide() {
+            document.getElementById("r1").checked = true;
+        }
     </script>
+
 </body>
 
 </html>
