@@ -4,29 +4,27 @@
 
 }
 
-.con {
-    display: flex;
-}
-
 /* bgside 的背景色 nav區塊*/
 .bgside {
     background-color: rgb(140, 177, 209);
     height: 837px;
     width: 20%;
-    position: relative;
+    /* position: relative; */
+    position: fixed;
 }
 
 /* Nav 導覽列 */
 .menu {
     /* background-color: brown; */
     font-size: 20px;
-    position: absolute;
-    margin-top: 110%;
+    position: fixed;
+    top: 35%;
+    width: 20%;
 
 }
 
 .menu li {
-    width: 250px;
+    width: 100%;
     list-style: none;
 
 }
@@ -46,14 +44,15 @@
 
 /* logo part*/
 #logo {
-    position: absolute;
-    margin-left: 10%;
+    position: fixed;
+    margin-left: 2%;
+    width: 15%;
 }
 
 .contactDiv {
     width: 80%;
     position: relative;
-
+    margin-left: 20%;
 }
 
 .table {
@@ -65,7 +64,6 @@
     margin-left: 1.3%;
     margin-right: 1.3%;
     margin-top: 5%;
-    margin-bottom: 117px;
 }
 
 .table th {
@@ -122,6 +120,7 @@
 /* 送出按鈕調整 */
 #tablebtns {
     text-align: center;
+    margin-top: 5%;
 }
 
 #tablebtns input {
